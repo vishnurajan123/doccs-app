@@ -1,23 +1,23 @@
 .doccard{
   width: 23rem;
-  border: 1px solid;
+  border: .5px solid rgba(0, 0, 0, 0.048);
   border-radius: 10px;
   padding: 20px;
-}
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;}
 .doccard .btt{
-  margin-left: 270px;
+  margin-left: 250px;
 }
 .btt button{
   padding: 5px 10px;
   margin-right: 5px;
 }
 .btt .one{
-  background-color: rgb(0, 132, 255);
+  background-color: rgb(0, 119, 255);
   color: white;
 
 }
 .btt .two{
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 111, 0);
   color: white;
 
 }
@@ -38,6 +38,7 @@
 .ql-toolbar.ql-snow{
   display: flex;
   justify-content: center;
+  flex-wrap:wrap ;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -55,5 +56,100 @@ justify-content: center;
   height: 100px;
 }
 .but button{
+  
+}
+nav{
+  padding: 5px;
+}
+.land{
+  background-image: url("https://images.unsplash.com/photo-1468779036391-52341f60b55d?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: left;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headd{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+}
+.sp{
+  color: rgb(253, 107, 3);
+  font-family: 'Josefin Sans', sans-serif;
+
+  font-size: 4.8rem;
+}
+.sp1{
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.btsp{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 250px;
+  height: 50px;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+.btsp:hover{
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  color: black;
+}
+.hhh:hover{
+  color: rgb(247, 110, 55);
+}
+.hh{
+  color: rgb(253, 70, 3);
+}
+.foot{
+  margin-top: 150px;
+}
+.noitem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.noitem img{
+  width: 200px;
+}
+.noitem span{
+  color: red;
+}
+
+@media(max-width:600px) {
+  .headd{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+}
+.sp{
+  color: rgb(253, 107, 3);
+  font-family: 'Josefin Sans', sans-serif;
+
+  font-size: 2.3rem;
+}
+.sp1{
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.doccard{
+  width: 19rem;
+}
+.doccard .btt{
+  margin-left: 200px;
+}
+.container .ql-editor{
+  min-height: 7in;
+  padding: .3in;
+  margin: 1rem;
+
+}
+
   
 }

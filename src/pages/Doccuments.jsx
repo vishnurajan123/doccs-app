@@ -42,7 +42,11 @@ useEffect(()=>{
         {
           doclist.length>0?doclist.map((doc)=>(
             <DocsCard setMovieAdded={setMovieAdded} doce={doc} id={doc.id}/>
-          )): <p>nothing to display</p>
+          )): <div className='noitem mt-5 pt-5'>
+                <img src="https://lordicon.com/icons/system/regular/52-wrong-file.svg" alt="" />
+                <h2>NO <span >FILES</span> ADDED</h2>
+
+          </div>
         }
         
 

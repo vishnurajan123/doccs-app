@@ -3,20 +3,14 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div  className='d-flex justify-content-center align-items-center flex-column'
-    style={{width:"100%",height:"300px"}}
+    <div  className='d-flex justify-content-center align-items-center flex-column foot container'
+    style={{width:"100%"}}
     >
         <div className='footer-content d-flex justify-content-evenly w-100 flex-wrap'>
             <div style={{width:"400px"}} className='website'>
-                        <h4> <i className="fa-solid fa-upload"></i>{' '}Bootstrap</h4>
-<h6>
-                Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
-    
-</h6>       
-<h6>
-         Code licensed MIT, docs CC BY 3.0.
-    
-</h6>           
+                        <h4> <i class="fa-regular fa-file-lines hh me-1"></i>DOCCS-HANDLE</h4>
+  
+   
 <p>
      Currently v5.3.2.
     
@@ -24,20 +18,19 @@ function Footer() {
             </div>
             <div className='links d-flex flex-column'>
                 <h4>Links</h4>
-                <Link to={'/home'} className='fs-4' style={{textDecoration:"none",color:"black"}} >Home</Link>
-                <Link to={'/'} className='fs-4' style={{textDecoration:"none",color:"black"}} >Landing page</Link>
+                <Link to={'/'} className='' style={{textDecoration:"none",color:"black"}} >Home</Link>
+                <Link to={'/doccument'} className='' style={{textDecoration:"none",color:"black"}} >Doccuments</Link>
 
-                <Link to={'/watch-history'} className='fs-4' style={{textDecoration:"none",color:"black"}}>Watch history</Link>
 
 
 
             </div>
             <div className='guids d-flex flex-column'>
             <h4>Guide</h4>
-                <Link to={'https://react-bootstrap.github.io/'} className='fs-4' style={{textDecoration:"none",color:"black"}} >React</Link>
-                <Link to={'https://react-bootstrap.github.io/'} className='fs-4' style={{textDecoration:"none",color:"black"}} >React Bootstrap</Link>
+                <Link to={'https://react-bootstrap.github.io/'} className='' style={{textDecoration:"none",color:"black"}} >React</Link>
+                <Link to={'https://react-bootstrap.github.io/'} className='' style={{textDecoration:"none",color:"black"}} >React Bootstrap</Link>
 
-                <Link to={'https://react-bootstrap.github.io/'} className='fs-4' style={{textDecoration:"none",color:"black"}}>Routing</Link>
+                <Link to={'https://react-bootstrap.github.io/'} className='' style={{textDecoration:"none",color:"black"}}>Routing</Link>
 
             </div>
             <div className='contact d-flex flex-column'>
@@ -52,7 +45,7 @@ function Footer() {
             </div>
 
         </div>
-        <p>Copyright © 2023 React Bootstrap. Built with Docusaurus.</p>
+        <p className='mt-4'>Copyright © 2023 DOCCS-HANDLE. Built with React.</p>
 
 
 

@@ -11,7 +11,7 @@ import { useDispatch } from 'react-redux';
 function DocsCard({doce,setMovieAdded}) {
 
   const [show, setShow] = useState(false);
-  const [updatedTitle,setUpdatedTitle]=useState("")
+  const [updatedTitle,setUpdatedTitle]=useState(doce.title)
   const dispatch=useDispatch()
 
   const [des,setDes]=useState(doce.description)
@@ -47,7 +47,7 @@ const handleShow = () => setShow(true);
                   
                   </div>
 
-                  <Link to={`/docs/${doce?.id}`}>
+                  <Link style={{textDecoration:"none"}} to={`/docs/${doce?.id}`}>
             <div className='lii'>
                 <h5 >{doce.title}</h5>
                 <p>{cleanText.slice(0,50)}</p>
@@ -68,7 +68,7 @@ const handleShow = () => setShow(true);
         <Modal.Title>Doccument title</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-       <TextField onChange={(e)=>setUpdatedTitle(e.target.value)}    className='form-control border-dark border-2' id="outlined-basic" label="Doccument title" variant="outlined" />
+       <TextField onChange={(e)=>setUpdatedTitle(e.target.value)} value={updatedTitle}   className='form-control border-dark border-2' id="outlined-basic" label="Doccument title" variant="outlined" />
 
       </Modal.Body>
       <Modal.Footer>
