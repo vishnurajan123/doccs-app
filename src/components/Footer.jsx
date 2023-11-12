@@ -12,7 +12,7 @@ function Footer() {
   
    
 <p>
-     Currently v5.3.2.
+     Currently v1.0.0.
     
 </p>
             </div>
